@@ -16,6 +16,8 @@ struct ItemMenu {
     var image: UIImage
     var name: String
     var selected: Bool
+    var submenu: Array<Dictionary<String, String>>
+    
 }
 
 
@@ -30,6 +32,7 @@ class CollectionViewController: UICollectionViewController {
     private let openImage = UIImage(named: "open")!
     
     private var selectIndexPath: IndexPath?
+    private var actionsView: UIView?
     
     
     override func viewDidLoad() {
@@ -37,17 +40,23 @@ class CollectionViewController: UICollectionViewController {
         
         
         let path = Bundle.main.path(forResource: "Menu", ofType: "plist")
-        let tempMenu = NSArray(contentsOfFile: path!) as! Array<String>
+        let tempMenu = NSArray(contentsOfFile: path!) as! Array<Dictionary<String, Any>>
         
         
-        for currentName in tempMenu {
-            if let image = UIImage(named: currentName) {
+        for currentDict in tempMenu {
+            
+            if let currentName = currentDict["name"] as? String, let submenu = currentDict["submenu"] as? Array<Dictionary<String, String>> {
+                if let image = UIImage(named: currentName) {
+                    
+                    let item = ItemMenu(image: image, name: currentName, selected: false, submenu: submenu)
+                    
+                    aMenu.append(item)
+                    
+                }
                 
-                let item = ItemMenu(image: image, name: currentName, selected: false)
-                
-                aMenu.append(item)
-    
             }
+            
+           
         }
         
         
@@ -110,10 +119,25 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+        
+        
         if let oldIndex = selectIndexPath {
             aMenu[oldIndex.row].selected = false
+            
+            if let actionsView = actionsView {
+                actionsView.removeFromSuperview()
+            }
+            
+            
             if let oldCell  = collectionView.cellForItem(at: oldIndex) as? CollectionViewCellIcon {
                 oldCell.opened.image = nil
+            }
+            
+            if oldIndex.row == indexPath.row {
+                selectIndexPath = nil
+                actionsView = nil
+                return
             }
         }
         
@@ -123,48 +147,46 @@ class CollectionViewController: UICollectionViewController {
         
         
         cell.opened.image = openImage
-        aMenu[indexPath.row].selected = true
+        var currentMenu = aMenu[indexPath.row]
+            
+        currentMenu.selected = true
         selectIndexPath = indexPath
         
-
         
-        let actions = UIView(frame: CGRect(x: 0, y: 100, width: 100, height: 100))
+        let positionY: Int = Int(cell.frame.maxY)
         
-        actions.backgroundColor = UIColor.white
+        actionsView = UIView(frame: CGRect(x: 0, y: positionY, width: Int(self.view.frame.width), height: 10 + currentMenu.submenu.count * 40))
         
-        
-        let newButton = UIButton(frame: CGRect(x: 0, y: 10, width: 100, height: 10))
-        
-        newButton.setTitle("Test", for: .normal)
-        newButton.backgroundColor = UIColor.black
-        
-        actions.addSubview(newButton)
-        
-        self.view.addSubview(actions)
-        
-        
-        
-//        let allert = UIAlertController(title: "", message: "", preferredStyle: UIAlertControllerStyle.actionSheet)
-//        
-//        allert.view.backgroundColor = UIColor.white
-//       
-//        
-//        let action = UIAlertAction(title: "Test", style: UIAlertActionStyle.default) { (alertAction) in
-//            print(alertAction.title ?? "")
-//        }
-//        
-//        
-//        allert.addAction(action)
-//        
-//        
-//        print(allert.view.frame)
-//        
-//        
-//        self.present(allert, animated: true, completion: nil)
-        
-        
-      //  collectionView.reloadData()
-        
+        if let actionsView = actionsView {
+            actionsView.backgroundColor = UIColor.white
+            
+            print(actionsView.frame)
+            
+            var currentPositionY = 10
+            
+            for currentSubmenu in currentMenu.submenu {
+                
+                if let name = currentSubmenu["name"], let type = currentSubmenu["type"] {
+                    let newButton = MyButton(frame: CGRect(x: 20, y: currentPositionY, width: Int(self.view.frame.width-40), height: 30))
+                    
+                    currentPositionY += 40
+                    
+                    newButton.setTitle(name, for: .normal)
+                    newButton.tag = Int(type) ?? 0
+                    newButton.backgroundColor = UIColor.black
+                    
+                    actionsView.addSubview(newButton)
+                    newButton.awakeFromNib()
+                    
+                }
+                
+               
+                
+            }
+            
+            self.view.addSubview(actionsView)
+            
+        }
         
     }
     

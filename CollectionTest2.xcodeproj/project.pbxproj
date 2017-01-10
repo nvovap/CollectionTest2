@@ -15,6 +15,7 @@
 		3242336C1E24E1C40021A525 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3242336B1E24E1C40021A525 /* CollectionViewController.swift */; };
 		3242336E1E24E3650021A525 /* CollectionViewCellIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3242336D1E24E3650021A525 /* CollectionViewCellIcon.swift */; };
 		324233701E24E5470021A525 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3242336F1E24E5470021A525 /* Menu.plist */; };
+		E7D2CEC41E2568F100F3063B /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2CEC31E2568F100F3063B /* MyImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3242336B1E24E1C40021A525 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		3242336D1E24E3650021A525 /* CollectionViewCellIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellIcon.swift; sourceTree = "<group>"; };
 		3242336F1E24E5470021A525 /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
+		E7D2CEC31E2568F100F3063B /* MyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		324233551E24D3BF0021A525 /* CollectionTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				E7D2CEC31E2568F100F3063B /* MyImageView.swift */,
 				3242336B1E24E1C40021A525 /* CollectionViewController.swift */,
 				324233561E24D3BF0021A525 /* AppDelegate.swift */,
 				3242336F1E24E5470021A525 /* Menu.plist */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D2CEC41E2568F100F3063B /* MyImageView.swift in Sources */,
 				3242336C1E24E1C40021A525 /* CollectionViewController.swift in Sources */,
 				3242335F1E24D3C10021A525 /* CollectionTest2.xcdatamodeld in Sources */,
 				324233571E24D3BF0021A525 /* AppDelegate.swift in Sources */,
@@ -314,6 +318,7 @@
 				3242336A1E24D3C30021A525 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
