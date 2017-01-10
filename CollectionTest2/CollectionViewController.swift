@@ -132,6 +132,14 @@ class CollectionViewController: UICollectionViewController {
         
         actions.backgroundColor = UIColor.white
         
+        
+        let newButton = UIButton(frame: CGRect(x: 0, y: 10, width: 100, height: 10))
+        
+        newButton.setTitle("Test", for: .normal)
+        newButton.backgroundColor = UIColor.black
+        
+        actions.addSubview(newButton)
+        
         self.view.addSubview(actions)
         
         
