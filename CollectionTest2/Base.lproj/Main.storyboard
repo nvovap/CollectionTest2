@@ -1,26 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jwl-hL-BTu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Collection View Controller-->
+        <scene sceneID="wT1-Fu-IEH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <collectionViewController id="jwl-hL-BTu" customClass="CollectionViewController" customModule="CollectionTest2" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bq0-i9-w1c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="d5J-WH-b7n">
+                            <size key="itemSize" width="50" height="64"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="33" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="iconCell" id="ytW-gt-BCX" customClass="CollectionViewCellIcon" customModule="CollectionTest2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="33" width="50" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="64"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5w-NX-zaz">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="69r-ZG-bl0"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-lD-M4D">
+                                            <rect key="frame" x="0.0" y="50" width="50" height="14"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="IBl-lD-M4D" firstAttribute="top" secondItem="D5w-NX-zaz" secondAttribute="bottom" id="Dbi-Os-cnS"/>
+                                    <constraint firstItem="D5w-NX-zaz" firstAttribute="top" secondItem="ytW-gt-BCX" secondAttribute="top" id="Pgg-qg-fZx"/>
+                                    <constraint firstItem="IBl-lD-M4D" firstAttribute="leading" secondItem="ytW-gt-BCX" secondAttribute="leading" id="SQw-2n-gxw"/>
+                                    <constraint firstItem="D5w-NX-zaz" firstAttribute="leading" secondItem="ytW-gt-BCX" secondAttribute="leading" id="Ynh-Ae-aPm"/>
+                                    <constraint firstAttribute="trailing" secondItem="IBl-lD-M4D" secondAttribute="trailing" id="lm0-4q-4Jk"/>
+                                    <constraint firstAttribute="bottom" secondItem="IBl-lD-M4D" secondAttribute="bottom" id="nK8-gF-nDx"/>
+                                    <constraint firstAttribute="trailing" secondItem="D5w-NX-zaz" secondAttribute="trailing" id="oJ1-rV-q6e"/>
+                                </constraints>
+                                <size key="customSize" width="50" height="64"/>
+                                <connections>
+                                    <outlet property="icon" destination="D5w-NX-zaz" id="Qfa-Bu-Hzr"/>
+                                    <outlet property="opened" destination="IBl-lD-M4D" id="tPd-3N-KRy"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="jwl-hL-BTu" id="fWo-xe-F7P"/>
+                            <outlet property="delegate" destination="jwl-hL-BTu" id="WGP-a2-Jzl"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bg4-Lz-Rz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="367.19999999999999" y="-58.020989505247378"/>
         </scene>
     </scenes>
 </document>

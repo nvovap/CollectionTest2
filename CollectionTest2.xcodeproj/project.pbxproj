@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		324233571E24D3BF0021A525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324233561E24D3BF0021A525 /* AppDelegate.swift */; };
-		324233591E24D3BF0021A525 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324233581E24D3BF0021A525 /* ViewController.swift */; };
 		3242335C1E24D3C00021A525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3242335A1E24D3C00021A525 /* Main.storyboard */; };
 		3242335F1E24D3C10021A525 /* CollectionTest2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3242335D1E24D3C10021A525 /* CollectionTest2.xcdatamodeld */; };
 		324233611E24D3C20021A525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324233601E24D3C20021A525 /* Assets.xcassets */; };
 		324233641E24D3C20021A525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 324233621E24D3C20021A525 /* LaunchScreen.storyboard */; };
+		3242336C1E24E1C40021A525 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3242336B1E24E1C40021A525 /* CollectionViewController.swift */; };
+		3242336E1E24E3650021A525 /* CollectionViewCellIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3242336D1E24E3650021A525 /* CollectionViewCellIcon.swift */; };
+		324233701E24E5470021A525 /* Menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3242336F1E24E5470021A525 /* Menu.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		324233531E24D3BF0021A525 /* CollectionTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		324233561E24D3BF0021A525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		324233581E24D3BF0021A525 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3242335B1E24D3C00021A525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3242335E1E24D3C10021A525 /* CollectionTest2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollectionTest2.xcdatamodel; sourceTree = "<group>"; };
 		324233601E24D3C20021A525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		324233631E24D3C20021A525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		324233651E24D3C30021A525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3242336B1E24E1C40021A525 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		3242336D1E24E3650021A525 /* CollectionViewCellIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellIcon.swift; sourceTree = "<group>"; };
+		3242336F1E24E5470021A525 /* Menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Menu.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		324233551E24D3BF0021A525 /* CollectionTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				3242336B1E24E1C40021A525 /* CollectionViewController.swift */,
 				324233561E24D3BF0021A525 /* AppDelegate.swift */,
-				324233581E24D3BF0021A525 /* ViewController.swift */,
+				3242336F1E24E5470021A525 /* Menu.plist */,
 				3242335A1E24D3C00021A525 /* Main.storyboard */,
+				3242336D1E24E3650021A525 /* CollectionViewCellIcon.swift */,
 				324233601E24D3C20021A525 /* Assets.xcassets */,
 				324233621E24D3C20021A525 /* LaunchScreen.storyboard */,
 				324233651E24D3C30021A525 /* Info.plist */,
@@ -128,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				324233641E24D3C20021A525 /* LaunchScreen.storyboard in Resources */,
+				324233701E24E5470021A525 /* Menu.plist in Resources */,
 				324233611E24D3C20021A525 /* Assets.xcassets in Resources */,
 				3242335C1E24D3C00021A525 /* Main.storyboard in Resources */,
 			);
@@ -140,9 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324233591E24D3BF0021A525 /* ViewController.swift in Sources */,
+				3242336C1E24E1C40021A525 /* CollectionViewController.swift in Sources */,
 				3242335F1E24D3C10021A525 /* CollectionTest2.xcdatamodeld in Sources */,
 				324233571E24D3BF0021A525 /* AppDelegate.swift in Sources */,
+				3242336E1E24E3650021A525 /* CollectionViewCellIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
