@@ -145,49 +145,64 @@ class CollectionViewController: UICollectionViewController {
             return
         }
         
-        
-        cell.opened.image = openImage
         var currentMenu = aMenu[indexPath.row]
-            
-        currentMenu.selected = true
-        selectIndexPath = indexPath
+        
         
         
         let positionY: Int = Int(cell.frame.maxY)
         
-        actionsView = UIView(frame: CGRect(x: 0, y: positionY, width: Int(self.view.frame.width), height: 10 + currentMenu.submenu.count * 40))
+        let countSubmenu = currentMenu.submenu.count
         
-        if let actionsView = actionsView {
-            actionsView.backgroundColor = UIColor.white
+        print(countSubmenu)
+        
+        if countSubmenu > 0 {
             
-            print(actionsView.frame)
+            cell.opened.image = openImage
             
-            var currentPositionY = 10
             
-            for currentSubmenu in currentMenu.submenu {
+            currentMenu.selected = true
+            selectIndexPath = indexPath
+            
+            actionsView = UIView(frame: CGRect(x: 0, y: positionY, width: Int(self.view.frame.width), height: 10 + countSubmenu * 40))
+            
+            if let actionsView = actionsView {
+                actionsView.backgroundColor = UIColor.white
                 
-                if let name = currentSubmenu["name"], let type = currentSubmenu["type"] {
-                    let newButton = MyButton(frame: CGRect(x: 20, y: currentPositionY, width: Int(self.view.frame.width-40), height: 30))
+                var currentPositionY = 10
+                
+                for currentSubmenu in currentMenu.submenu {
                     
-                    currentPositionY += 40
+                    if let name = currentSubmenu["name"], let type = currentSubmenu["type"] {
+                        let newButton = MyButton(frame: CGRect(x: 20, y: currentPositionY, width: Int(self.view.frame.width-40), height: 30))
+                        
+                        currentPositionY += 40
+                        
+                        newButton.setTitle(name, for: .normal)
+                        newButton.tag = Int(type) ?? 0
+                        newButton.backgroundColor = UIColor.black
+                        
+                        newButton.addTarget(self, action:#selector(CollectionViewController.onAction(_:)) , for: .touchUpInside)
+                        
+                        actionsView.addSubview(newButton)
+                        newButton.awakeFromNib()
+                        
+                    }
                     
-                    newButton.setTitle(name, for: .normal)
-                    newButton.tag = Int(type) ?? 0
-                    newButton.backgroundColor = UIColor.black
                     
-                    actionsView.addSubview(newButton)
-                    newButton.awakeFromNib()
                     
                 }
                 
-               
-                
+                self.view.addSubview(actionsView)
             }
             
-            self.view.addSubview(actionsView)
-            
+        } else {
+            dismiss(animated: true, completion: nil)
         }
         
+    }
+    
+    func onAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
     }
     
     

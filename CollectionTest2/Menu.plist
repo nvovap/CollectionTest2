@@ -23,367 +23,37 @@
 				<key>type</key>
 				<string>3</string>
 				<key>name</key>
-				<string>box</string>
+				<string>Box</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>4</string>
 				<key>name</key>
-				<string>fitness equipment</string>
+				<string>Fitness Equipment</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>5</string>
 				<key>name</key>
-				<string>piano</string>
+				<string>Piano</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>6</string>
 				<key>name</key>
-				<string>bathroom appliances</string>
+				<string>Bathroom Appliances</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>6</string>
 				<key>name</key>
-				<string>Home plants</string>
+				<string>Home Plants</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>7</string>
 				<key>name</key>
-				<string>other</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>home</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>furniture</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>Home appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>box</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>fitness equipment</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>5</string>
-				<key>name</key>
-				<string>piano</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>bathroom appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>Home plants</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>7</string>
-				<key>name</key>
-				<string>other</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>home</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>furniture</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>Home appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>box</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>fitness equipment</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>5</string>
-				<key>name</key>
-				<string>piano</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>bathroom appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>Home plants</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>7</string>
-				<key>name</key>
-				<string>other</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>home</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>furniture</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>Home appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>box</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>fitness equipment</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>5</string>
-				<key>name</key>
-				<string>piano</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>bathroom appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>Home plants</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>7</string>
-				<key>name</key>
-				<string>other</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>home</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>furniture</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>Home appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>box</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>fitness equipment</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>5</string>
-				<key>name</key>
-				<string>piano</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>bathroom appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>Home plants</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>7</string>
-				<key>name</key>
-				<string>other</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>home</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>furniture</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>Home appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>box</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>fitness equipment</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>5</string>
-				<key>name</key>
-				<string>piano</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>bathroom appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>Home plants</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>7</string>
-				<key>name</key>
-				<string>other</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>home</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>furniture</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>Home appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>box</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>fitness equipment</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>5</string>
-				<key>name</key>
-				<string>piano</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>bathroom appliances</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>6</string>
-				<key>name</key>
-				<string>Home plants</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>7</string>
-				<key>name</key>
-				<string>other</string>
+				<string>Other</string>
 			</dict>
 		</array>
 	</dict>
@@ -391,14 +61,7 @@
 		<key>name</key>
 		<string>Cars</string>
 		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>8</string>
-				<key>name</key>
-				<string>Car</string>
-			</dict>
-		</array>
+		<array/>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -409,7 +72,7 @@
 				<key>type</key>
 				<string>9</string>
 				<key>name</key>
-				<string>sand</string>
+				<string>Sand</string>
 			</dict>
 			<dict>
 				<key>type</key>
@@ -421,19 +84,19 @@
 				<key>type</key>
 				<string>11</string>
 				<key>name</key>
-				<string>charcoal</string>
+				<string>Charcoal</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>12</string>
 				<key>name</key>
-				<string>agricultural</string>
+				<string>Agricultural</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>13</string>
 				<key>name</key>
-				<string>other</string>
+				<string>Other</string>
 			</dict>
 		</array>
 	</dict>
@@ -446,13 +109,13 @@
 				<key>type</key>
 				<string>14</string>
 				<key>name</key>
-				<string>water</string>
+				<string>Water</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>15</string>
 				<key>name</key>
-				<string>mineral oils</string>
+				<string>Mineral Oils</string>
 			</dict>
 			<dict>
 				<key>type</key>
@@ -470,44 +133,13 @@
 				<key>type</key>
 				<string>18</string>
 				<key>name</key>
-				<string>cooking oil</string>
+				<string>Cooking Oil</string>
 			</dict>
 			<dict>
 				<key>type</key>
 				<string>19</string>
 				<key>name</key>
-				<string>cinestar</string>
-			</dict>
-		</array>
-	</dict>
-	<dict>
-		<key>name</key>
-		<string>Boats</string>
-		<key>submenu</key>
-		<array>
-			<dict>
-				<key>type</key>
-				<string>1</string>
-				<key>name</key>
-				<string>fruits</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>2</string>
-				<key>name</key>
-				<string>vhgghchgfc</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>3</string>
-				<key>name</key>
-				<string>forage</string>
-			</dict>
-			<dict>
-				<key>type</key>
-				<string>4</string>
-				<key>name</key>
-				<string>other</string>
+				<string>Cinestar</string>
 			</dict>
 		</array>
 	</dict>
